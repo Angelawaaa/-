@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	printf("请输入字母的对应Decimal值:");
+	int a,b;
+	a = 0;
+	char ch;
+	scanf("%d", &a);
+	if (a >= 65 && a <= 89)
+	{
+		b = a + 1;
+		ch = b;
+		putchar(ch);
+	}
+	else if (a == 90)
+	{
+		printf("A");
+	}
+	else if (a >= 97 && a <= 121)
+	{
+		b = a + 1;
+		ch = b;
+		putchar(ch);
+	}
+	else if (a == 122)
+	{
+		printf("a");
+	}
+	return 0;
+}
